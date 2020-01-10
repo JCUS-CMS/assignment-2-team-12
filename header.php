@@ -14,6 +14,8 @@
 <html class="no-js" <?php language_attributes(); ?>>
 
 	<head>
+		//testing testing 123
+
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
