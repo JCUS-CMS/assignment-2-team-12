@@ -1,0 +1,17 @@
+<wpml-config>
+  <admin-texts>
+    <key name="theme_mods_food-express">
+      <key name="0"/>
+      <key name="food_express_highlight_btn_label"/>
+      <key name="food_express_menu_title"/>
+      <key name="food_express_menu_subtitle"/>
+      <key name="food_express_menu_tagline"/>
+      <key name="food_express_menu_shortcode"/>
+      <key name="food_express_menu_label"/>
+      <key name="food_express_recent_title"/>
+      <key name="food_express_recent_section_subtitle"/>
+      <key name="food_express_testimonial_title"/>
+      <key name="food_express_instagram_title"/>
+    </key>
+  </admin-texts>
+</wpml-config>
