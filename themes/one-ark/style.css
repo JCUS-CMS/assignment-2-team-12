@@ -1,0 +1,1632 @@
+/*
+Theme Name:  One ARK
+Author: Benjamin Lu
+Description: One Ark is a fully functional mobile friendly WordPress theme that allows you to create amazing things.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
+Version: 0.0.3
+Text Domain: one-ark
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+===========================================================================================================
+Table of Content
+===========================================================================================================
+ 1.0 - Typography
+ 2.0 - Elements
+ 3.0 - Forms
+ 4.0 - Alignments
+ 5.0 - Accessibility
+ 6.0 - Clearings
+ 7.0 - Basic Structure
+ 8.0 - Navigation (Links)
+ 9.0 - Navigation (Primary Navigation)
+10.0 - Navigation (Secondary Navigation)
+11.0 - Navigation (Pagination Navigation)
+12.0 - Navigation (Social Navigation)
+13.0 - Header Area (Header Image)
+14.0 - Content Area (Posts and Pages)
+15.0 - Content Area (Archives)
+16.0 - Content Area (Comments)
+17.0 - Content Area (Error 404)
+18.0 - Content Area (Search)
+19.0 - Content Area (Post Formats)
+20.0 - Widget Area
+21.0 - Footer Area
+22.0 - Media Area (Captions)
+23.0 - Media Area (Galleries)
+24.0 - Media Queries (Mobile Medium 37.50em (600px))
+25.0 - Media Queries (Mobile Large 41.688em (667px))
+26.0 - Media Queries (Mobile Extra Large 46em (736px))
+27.0 - Media Queries (Tablet Small 48em (768px))
+28.0 - Media Queries (Tablet Medium 64em (1024px))
+29.0 - Media Queries (Desktop Large 75.375em (1206px))
+30.0 - Media Queries (Desktop Extra Large 80em (1280px))
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+ 1.0 - Typography
+===========================================================================================================
+*/
+body {
+    background: #ffffff;
+    font-family: 'Merriweather', serif;
+}
+
+h1 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.67em 0;
+}
+
+h2 {
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0.83em 0;
+}
+
+h3 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.17em;
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+h4 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 1.33em 0;
+}
+
+h5 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: .83em;
+    font-weight: 700;
+    margin: 1.67em 0;
+}
+
+h6 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: .67em;
+    font-weight: 700;
+    margin: 2.33em 0;
+}
+
+/*
+===========================================================================================================
+ 2.0 - Elements
+===========================================================================================================
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { 
+	box-sizing: inherit;
+}
+
+figure,
+img {
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+/*
+===========================================================================================================
+ 3.0 - Forms
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+ 4.0 - Alignments
+===========================================================================================================
+*/
+.alignleft {
+	display: inline;
+    float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*
+===========================================================================================================
+ 5.0 - Accessibility
+===========================================================================================================
+*/
+.screen-reader-text {
+    clip: rect(0.063em, 0.063em, 0.063em, 0.063em);
+    height: 0.063em;
+    overflow: hidden;
+    position: absolute !important;
+    width: 0.063em;
+}
+
+.screen-reader-text:focus {
+    background: #f1f1f1;
+    border-radius: 0.188em;
+    box-shadow: 0 0 0.125em 0.125em;
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    height: auto;
+    left: 0.313em;
+    line-height: normal;
+    padding: 0.938em 1.438em 0.875em;
+    text-decoration: none;
+    top: 0.313em;
+    width: auto;
+    z-index: 100000; 
+}
+
+/*
+===========================================================================================================
+ 6.0 - Clearings
+===========================================================================================================
+*/
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.post-navigation:before,
+.post-navigation:after,
+.entry-content:before,
+.entry-content:after,
+.entry-excerpt:before,
+.entry-excerpt:after,
+.left-sidebar:before,
+.left-sidebar:after,
+.right-sidebar:before,
+.right-sidebar:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/*
+===========================================================================================================
+ 7.0 - Basic Structure
+===========================================================================================================
+*/
+.site-content {
+    margin: 1.125em auto;
+    max-width: 75.375em;
+    padding: 1.125em;
+}
+
+/*
+===========================================================================================================
+ 8.0 - Navigation (Links)
+===========================================================================================================
+*/
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #6c6c8c;
+}
+
+/*
+===========================================================================================================
+ 9.0 - Navigation (Primary Navigation)
+===========================================================================================================
+*/
+.main-navigation {
+    background: #000000;
+}
+
+.primary-navigation {
+    display: block;
+    width: 100%;
+}
+
+.primary-navigation ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+}
+
+.primary-navigation li {
+	border-top: 0.063em solid #eaeaea;
+	border-top: 0.063em solid rgba(51, 51, 51, 0.1);
+	position: relative;
+}
+
+.primary-navigation ul ul {
+    display: none;
+    margin-left: 0.5em;
+}
+
+.primary-navigation a {
+    color: #ffffff;
+    display: block;
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus {
+    background: #ffffff;
+    color: #000000;
+}
+
+.primary navigation a,
+.primary-navigation ul ul li:lastchild a {
+    border-bottom: 0.063em solid #ffffff;
+}
+
+.primary-navigation ul li:last-child a {
+    border-bottom: none;
+}
+
+.primary-navigation ul .toggled-on {
+    display: block;
+}
+
+.primary-navigation .current-menu-item > a,
+.primary-navigation .current-menu-ancestor > a,
+.primary-navigation .current_page_item > a,
+.primary-navigation .current_page_ancestor > a {
+	font-weight: 700;
+}
+
+.primary-navigation .nav-menu > ul > li:first-child,
+.primary-navigation .nav-menu > li:first-child {
+	border-top: 0;
+}
+
+.primary-navigation .menu-item-has-children > a,
+.primary-navigation .page_item_has_children > a{
+	padding-right: 3em;
+}
+
+.no-js .primary-navigation ul ul {
+	display: block;
+}
+
+.dropdown-toggle {
+    background: #000000;
+    border: 0.063em solid #ffffff;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    color: #ffffff;
+    font-family: 'fontawesome';
+    height: 1.75em;
+    padding: 0;
+    position: absolute;
+    right: 0.313em;
+    top: 0.313em;
+    width: 1.75em;
+}
+
+.dropdown-toggle:after {
+    font-size: 1em;
+    content: "\f078";
+    left: 0;
+    line-height: 1.875em;
+    position: relative;
+    top: 0;
+    width: 1.875em;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+	background: #ffffff;
+	color: #000000;
+}
+
+.dropdown-toggle.toggle-on:after {
+	content: "\f077";
+}
+
+.primary-navigation.toggled {
+    bottom: 0;
+    padding: 1em;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-menu {
+    background: #000000;
+	padding: 1em;
+	margin-bottom: 3em;
+}
+
+.primary-navigation.toggled ul {
+	max-height: calc(100vh - 8em);
+	overflow-y: auto;
+}
+
+.primary-navigation.toggled ul ul {
+	display: none;
+}
+
+.primary-navigation.toggled ul ul.toggled-on,
+.primary-navigation.toggled ul ul.toggled-on > ul {
+	display: block;
+}
+
+.menu-toggle {
+	background-color: #000;
+	border: solid 0.125em #fff;
+	bottom: 1em;
+	color: #fff;
+    display: none;
+	font-family: 'Sanchez', serif;
+	font-size: 1em;
+	left: 1em;
+    padding: 0.4em;
+	position: fixed;
+	transition: all ease-out 400ms;
+	z-index: 100;
+}
+
+.menu-toggle.hide {
+	bottom: -2.5em;
+}
+
+.toggled .menu-toggle.hide {
+	bottom: 1em;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+	text-decoration: underline;
+}
+
+/*
+===========================================================================================================
+10.0 - Navigation (Secondary Navigation)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+11.0 - Navigation (Pagination Navigation)
+===========================================================================================================
+*/
+.pagination {
+    text-align: center;
+}
+
+.page-numbers {
+    background: #ffffff;
+    border: 0.063em solid #c3c3c3;
+    color: #333333;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.page-numbers:hover {
+	background: #000;
+	color: #fff;
+	border-color: #000;
+}
+
+.page-number:hover a {
+    color: #ffffff;
+}
+
+.page-numbers.current {
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-links > a {
+    border: 0.063em solid #999999;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.page-links > a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-links > span {
+    background: #000000;
+    border: 0.063em solid #666666;
+    color: #ffffff;
+    padding: 0.5em 1em;
+}
+
+.posts-navigation,
+.post-navigation {
+    clear: both;
+    margin: 1.125em 0;
+}
+
+.posts-navigation .nav-links .nav-previous,
+.post-navigation .nav-links .nav-previous {
+    float: left;
+    margin: 0.5em 0;
+}
+
+.posts-navigation .nav-links .nav-next,
+.post-navigation .nav-links .nav-next {
+    float: right;
+    margin: 0.5em 0;
+}
+
+.posts-navigation .nav-links .nav-previous .post-previous,
+.post-navigation .nav-links .nav-previous .post-previous {
+    display: block;
+    font-size: 0.9375em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.posts-navigation .nav-links .nav-next .post-next,
+.post-navigation .nav-links .nav-next .post-next {
+    display: block;
+    font-size: 0.9375em;
+    font-weight: 700;
+    text-align: right
+}
+
+.posts-navigation .nav-links .nav-previous .post-title,
+.post-navigation .nav-links .nav-previous .post-title {
+    font-size: 0.813em;
+}
+
+.posts-navigation .nav-links .nav-next .post-title,
+.post-navigation .nav-links .nav-next .post-title {
+    font-size: 0.813em;
+}
+
+.link-pages {
+    text-align: center; 
+}
+
+/*
+===========================================================================================================
+12.0 - Navigation (Social Navigation)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+13.0 - Header Area (Header Image)
+===========================================================================================================
+*/
+.site-branding {
+    margin: 1.125em auto 0 auto;
+    padding: 1.125em;
+    text-align: center;
+}
+
+.site-branding .site-title,
+.site-branding .site-description {
+    margin: 0;
+    padding: 0;
+}
+
+.site-branding .site-title a {
+    font-size: 1.250em;
+}
+
+.site-header-image {
+    background: url(images/header-image.jpg);
+    padding: 15em;
+}
+
+/*
+===========================================================================================================
+14.0 - Content Area (Posts and Pages)
+===========================================================================================================
+*/
+.left-sidebar .content-area {
+    background: #ffffff;
+    float: right;
+    margin-top: -8em;
+    padding: 1.125em;
+    width: 70.76923076923077%;
+}
+
+.right-sidebar .content-area {
+    background: #ffffff;
+    float: left;
+    margin-top: -8em;
+    padding: 1.125em;
+    width: 70.76923076923077%;
+
+}
+
+.no-sidebar .content-area {
+    background: #ffffff;
+    margin-top: -8em;
+    padding: 1.125em;
+}
+
+.no-sidebar .widget-area {
+    flex-wrap: wrap;
+    margin: 1.250em;
+}
+
+.no-sidebar .widget-area .widget {
+    float: left;
+    padding: 1.125em;
+    width: 22%;
+}
+
+.content-area .entry-header {
+    margin-bottom: 2.5em;
+}
+
+.content-area .entry-header .entry-title {
+    margin: 0;
+    padding: 0;
+} 
+
+.content-area .entry-header .entry-title:after {
+    border-bottom: 0.063em solid #111111;
+    content: "";
+    display: block;
+    margin: 0.188em 0;
+}
+
+.content-area .entry-content,
+.content-area .entry-excerpt {
+    line-height: 1.6em;
+}
+
+.content-area .post .entry-excerpt .continue-reading a,
+.section-blog .entry-content .continue-reading a {
+    border: 0.125em solid #111111;
+    display: inline-block;
+    line-height: 1.6em;
+    margin-bottom: 3em;
+    padding: 0.5em 1em;
+}
+
+.content-area .entry-post-thumbnail {
+    margin-bottom: 0.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.entry-taxonomies {
+    margin: 2.250em 0;
+}
+
+.cat-link,
+.tag-link {
+    display: block;
+    font-size: 0.875em;
+    margin-bottom: 0.313em;
+}
+
+.tag-link .fa-tags {
+    margin: 0;
+}
+
+.tag-list,
+.cat-list {
+    font-size: 0.750em;
+}
+
+.sticky::before {
+    content: "\f08d";
+    float: left;
+    font-family: 'FontAwesome';
+    font-size: 2.125em;
+    margin-right: 0.4em;
+}
+
+/*
+===========================================================================================================
+15.0 - Content Area (Archives)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+16.0 - Content Area (Comments)
+===========================================================================================================
+*/
+.comments-area {
+    margin: 0.938em 0;   
+}
+
+.comments-title {
+    color: #111111;
+    margin: 0 0 1.125em 0;
+    text-align: center;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+}
+
+.comment-body {
+    border: 0.063em solid #cccccc;
+    color: #111111;
+    margin-bottom: 1.250em;
+    padding: 0.625em;
+}
+
+.comments-area > ol  {
+    list-style-type: none;
+}
+
+.comment-author .avatar {
+    border: 0.250em solid #cccccc;
+    border-radius: 50%;
+    float: left; 
+    display: block;
+    margin-right: 0.8em;
+}
+
+.comment-author .fn {
+    font-size: 1.3125em;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+}
+
+.comment-meta {
+    font-size: 0.750em;
+}
+
+.comment-content {
+    display: block;
+    margin: 2.5em 0.5em 0 0.5em;
+}
+
+
+.comments-area .says {
+    display: none;
+}
+
+.reply {
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+
+.reply a {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    color: #373737;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.reply a:hover,
+.reply a:focus {
+	color: #373737;
+    text-decoration: underline;
+}
+
+.comment-list ol {
+    margin-top: 1.250em;
+    margin-left: 1.250em;
+}
+
+ol.children {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.content-meta {
+    margin-left: 4.375em;
+}
+
+.comment-navigation {
+    border-top: 0.063 solid #999;
+    border-bottom: 0.063em solid #999;
+}
+
+.comment-navigation i {
+    padding: 0.625em;
+}
+
+.comment-previous {
+    float: left;
+}
+.comment-next {
+    float: right;
+}
+
+.bypostauthor > .comment-body {
+    background: #f0f0f0; 
+    padding: 0.625em;
+    position: relative;
+}
+
+.comment-reply-title {
+    color: #111111;
+    font-size: 1.250em;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.625em;
+}
+
+.comment-form p {
+    margin-left: 0;
+}
+
+.required {
+    color: #FF0000;
+}
+
+.comment-awaiting-moderation {
+    background: #84BD68;
+    color: #111111;
+    font-size: 0.750em;
+    padding: 0.188em 0.250em;
+}
+
+.form-allowed-tags {
+    font-size: 0.813em;
+    width: 37.5em;
+}
+
+.comment-form .comment-form-comment label,
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
+.comment-form .comment-form-url label {
+    color: #111111;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.2em
+}
+
+.comment-form .comment-form-comment textarea {
+    border: 0.063em solid #cccccc;
+    font-family: 'Merriewather', serif;
+    font-size: 1em;
+    min-height: 12.375em;
+    width: 100%;
+}
+
+.comment-form .comment-form-author input[type="text"],
+.comment-form .comment-form-email input[type="email"],
+.comment-form .comment-form-url input[type="url"] {
+    border: 0.063em solid #cccccc;
+    font-family: 'Merriewather', serif;
+    font-size: 1em;
+    padding: 0.6em;
+    width: 20em;
+}
+
+.comment-form .comment-notes {
+    font-size: 0.875em;
+}
+
+p.comment-awaiting-moderation {
+    margin: 0.125em 0 0 4.063em;
+    padding: 0.188em 0.313em;
+}
+
+.comment-subscription-form .subscribe-label {
+    display: inline !important;
+    font-size: 0.875em;
+}
+
+/*
+===========================================================================================================
+17.0 - Content Area (Error 404)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+18.0 - Content Area (Search)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+19.0 - Content Area (Post Formats)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+20.0 - Widget Area
+===========================================================================================================
+*/
+.left-sidebar .widget-area {
+    float: left;
+    width: 24.61538461538462%;
+}
+
+.right-sidebar .widget-area {
+    float: right;
+    width: 24.61538461538462%;
+}
+
+.widget-area .search-form:before,
+.widget-area .search-form:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.widget-area .search-form {
+    padding: 0.938em;
+    background: #555;
+    max-width: 100%;
+}
+
+.widget-area .search-field {
+    border: none;
+    float: left;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    padding: 0.563em;
+    width: 100%;
+}
+
+.widget-area .search-submit {
+    border: none;
+    background: #d88f3c;
+    color: #111111;
+    float: right;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    display: none;
+    padding: 0.5em;
+    position: relative;
+    width: 30%;
+}
+
+.widget-area .widget {
+    color: #111111;
+    margin-bottom: 2.250em;
+    font-size: 0.875em;
+}
+
+.widget ul,
+.widget ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget li {
+    margin: 0.4em 0 0 0;
+}
+
+.widget li li {
+    margin-left: 1.125em;
+}
+
+.widget select {
+    font-family: 'Merriweather', serif;
+    margin: 0.625em 0;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.widget.widget_post_thumbnail {
+    padding-bottom: 0;
+}
+
+.widget-title {
+    border-bottom: 0.094em solid #111111;
+    color: #111111;
+    display: inline-block;
+    margin: 0 0 0.5em 0;
+}
+
+.rss-widget-icon {
+    display: none;
+}
+
+.rsswidget {
+    display: block;
+}
+
+.widget_rss cite {
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    margin-bottom: 1.125em;
+}
+
+.widget-area table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.widget-area tr:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+.widget-area th {
+    background: #333333;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.widget-area th, td {
+    border: 0.063em solid #cccccc;
+    text-align: left;
+    padding: 0.438em;
+}
+
+.rss-date {
+    font-size: 0.875em;
+}
+
+.rssSummary {
+    margin-top: 0.625em;
+}
+
+#wp-calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#wp-calendar tr:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+#wp-calendar th {
+    background: #999999;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+    border: 0.063em solid #cccccc;
+    padding: 0.438em;
+    text-align: center;
+}
+
+#wp-calendar {
+    border: 0.063em solid #cccccc;
+    margin: 0;
+    margin-bottom: 1.250em;
+    text-align: center;
+    width: 100%;
+}
+
+#wp-calendar a {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+#wp-calendar caption {
+    font-weight: 700;
+    margin: 0.313em 0;
+    text-align: center;
+}
+
+#wp-calendar #today {
+    background: #cccccc;
+    font-weight: 700;
+}
+
+/*
+===========================================================================================================
+21.0 - Footer Area
+===========================================================================================================
+*/
+.site-footer {
+    background: #000000;
+    padding: 1.125em;
+    text-align: center;
+}
+
+.site-footer,
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-title {
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.125em;
+}
+
+.site-info {
+    font-size: 0.938em;
+}
+
+.site-info .power-by {
+    display: block;
+}
+
+/*
+===========================================================================================================
+22.0 - Media Area (Captions)
+===========================================================================================================
+*/
+.wp-caption {
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wp-caption-text { 
+    text-align: center; 
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    background: #999999;
+    color: #111111;
+    font-size: 0.875em;
+    padding: 0.313em;
+    text-align: center;
+}
+
+.wp-caption p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+===========================================================================================================
+23.0 - Media Area (Galleries)
+===========================================================================================================
+*/
+
+/*
+===========================================================================================================
+24.0 - Media Queries (Mobile Medium 37.50em (600px))
+===========================================================================================================
+*/
+@media screen and (min-height: 30.063em) and (max-width: 37.50em) {
+    .site-branding {
+        margin: 1.125em auto 0 auto;
+        padding: 1.125em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .site-branding .site-title,
+    .site-branding .site-description {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-branding .site-title a {
+        font-size: 1.250em;
+    }
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: none;
+        margin-top: 1.125em;
+        width: 100%;
+    }
+}
+
+/*
+===========================================================================================================
+25.0 - Media Queries (Mobile Large 41.688em (667px))
+===========================================================================================================
+*/
+@media screen and (min-height: 37.563em) and (max-width: 41.688em) {
+    .site-branding {
+        margin: 1.125em auto 0 auto;
+        padding: 1.125em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .site-branding .site-title,
+    .site-branding .site-description {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-branding .site-title a {
+        font-size: 1.250em;
+    }
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: none;
+        margin-top: 1.125em;
+        width: 100%;
+    }
+}
+
+/*
+===========================================================================================================
+26.0 - Media Queries (Mobile Extra Large 46em (736px))
+===========================================================================================================
+*/
+@media screen and (min-height: 41.750em) and (max-width: 46em) {
+    .site-branding {
+        margin: 1.125em auto 0 auto;
+        padding: 1.125em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .site-branding .site-title,
+    .site-branding .site-description {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-branding .site-title a {
+        font-size: 1.250em;
+    }
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: none;
+        margin-top: 1.125em;
+        width: 100%;
+    }
+}
+
+
+/*
+===========================================================================================================
+27.0 - Media Queries (Tablet Small 48em (768px))
+===========================================================================================================
+*/
+@media screen and (min-height: 30.063em) and (max-width: 48em) {
+    .site-branding {
+        margin: 1.125em auto 0 auto;
+        padding: 1.125em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .site-branding .site-title,
+    .site-branding .site-description {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-branding .site-title a {
+        font-size: 1.250em;
+    }
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .no-sidebar .wdiget-area,
+    .left-sidebar .widget-area,
+    .right-sidebar .widget-area {
+        flex-wrap: wrap;
+        float: none;
+        width: 100%;
+    }
+    
+    .no-sidebar .widget-area .widget,
+    .left-sidebar .widget-area .widget,
+    .right-sidebar .widget-area .widget {
+        float: left;
+        padding: 0;
+        width: 50%;
+    }
+}
+
+/*
+===========================================================================================================
+28.0 - Media Queries (Tablet Medium 64em (1024px))
+===========================================================================================================
+*/
+@media screen and (min-width: 64em) and (max-width: 64em) {
+    .primary-navigation {
+        clear: none;
+    }
+    
+	/* Position the menu in the header */
+	.primary-navigation,
+	.primary-navigation.toggled {
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.primary-navigation ul,
+	.primary-navigation.toggled ul {
+        background: #ffffff;
+		max-height: none;
+		padding-left: 0;
+		text-align: center;
+        
+	}
+	
+	.primary-navigation.toggled ul {
+		overflow-y: visible;
+	}
+	
+	/* Display the menu items in a horizontal order */
+	.primary-navigation li {
+		display: inline-block;
+		border: none;
+	}
+	
+	/* Add an outline to the drop-down menus */
+	.primary-navigation ul ul {
+		outline: 0.063em solid #333;
+	}
+	
+	/* Left-align drop-down menu items */
+	.primary-navigation li li {
+		display: block;
+		text-align: left;
+	}
+    
+    .primary-navigation a {
+        color: #111111;
+        padding: 0.5em 1em;
+    }
+	
+	.primary-navigation a,
+	.primary-navigation ul ul li:last-child a {
+		border-bottom: none;
+	}
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+	
+	/* Add an outline on hovered and focused menu items */
+	.primary-navigation a:hover,
+	.primary-navigation a:focus {
+		background: transparent;
+		color: #6c6c8c;
+		text-decoration: none;
+	}
+	
+	/* Create hover and focus contrast on drop-down items */
+	.primary-navigation li li a:hover,
+	.primary-navigation li li a:focus {
+		background: #eee;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	/* Position drop-down menus absolutely */
+	.primary-navigation ul ul.toggled-on {
+        background: #000000;
+		display: block;
+		margin-left: 0;
+		position: absolute;
+        right: 0;
+		width: 17em;
+		z-index: 10;
+	}
+	
+	.primary-navigation ul ul ul.toggled-on {
+		right: 0;
+        padding-left: 1em;
+        position: relative;
+	}
+	
+	/* Indent 3rd level drop-down menus */
+	.primary-navigation ul ul ul a {
+		padding-left: 2em;
+	}
+    
+    .nav-menu {
+        padding: 0.4em;
+    }
+
+    .dropdown-toggle:hover,
+    .dropdown-toggle:focus {
+        background: #111111;
+        color: #ffffff;
+    }
+
+    .left-sidebar .content-area {
+        width: 64.84375%;
+    }
+
+    .right-sidebar .content-area {
+        width: 64.84375%;
+    }
+
+    .no-sidebar .wdiget-area,
+    .left-sidebar .widget-area,
+    .right-sidebar .widget-area {
+        flex-wrap: wrap;
+        float: none;
+        width: 100%;
+    }
+    
+    .no-sidebar .widget-area .widget,
+    .left-sidebar .widget-area .widget,
+    .right-sidebar .widget-area .widget {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+/*
+===========================================================================================================
+29.0 - Media Queries (Desktop Large 75.375em (1206px))
+===========================================================================================================
+*/
+
+
+/*
+===========================================================================================================
+30.0 - Media Queries (Desktop Extra Large 80em (1280px))
+===========================================================================================================
+*/
+@media screen and (min-width: 80em) {
+    .primary-navigation {
+        clear: none;
+    }
+    
+	/* Position the menu in the header */
+	.primary-navigation,
+	.primary-navigation.toggled {
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.primary-navigation ul,
+	.primary-navigation.toggled ul {
+        background: #ffffff;
+		max-height: none;
+		padding-left: 0;
+		text-align: center;
+        
+	}
+	
+	.primary-navigation.toggled ul {
+		overflow-y: visible;
+	}
+	
+	/* Display the menu items in a horizontal order */
+	.primary-navigation li {
+		display: inline-block;
+		border: none;
+	}
+	
+	/* Add an outline to the drop-down menus */
+	.primary-navigation ul ul {
+		outline: 0.063em solid #333;
+	}
+	
+	/* Left-align drop-down menu items */
+	.primary-navigation li li {
+		display: block;
+		text-align: left;
+	}
+    
+    .primary-navigation a {
+        color: #111111;
+        padding: 0.5em 1em;
+    }
+	
+	.primary-navigation a,
+	.primary-navigation ul ul li:last-child a {
+		border-bottom: none;
+	}
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+	
+	/* Add an outline on hovered and focused menu items */
+	.primary-navigation a:hover,
+	.primary-navigation a:focus {
+		background: transparent;
+		color: #6c6c8c;
+		text-decoration: none;
+	}
+	
+	/* Create hover and focus contrast on drop-down items */
+	.primary-navigation li li a:hover,
+	.primary-navigation li li a:focus {
+		background: #eee;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	/* Position drop-down menus absolutely */
+	.primary-navigation ul ul.toggled-on {
+        background: #000000;
+		display: block;
+		margin-left: 0;
+		position: absolute;
+        right: 0;
+		width: 17em;
+		z-index: 10;
+	}
+	
+	.primary-navigation ul ul ul.toggled-on {
+		right: 0;
+        padding-left: 1em;
+        position: relative;
+	}
+	
+	/* Indent 3rd level drop-down menus */
+	.primary-navigation ul ul ul a {
+		padding-left: 2em;
+	}
+    
+    .nav-menu {
+        padding: 0.4em;
+    }
+
+    .dropdown-toggle:hover,
+    .dropdown-toggle:focus {
+        background: #111111;
+        color: #ffffff;
+    }
+    
+}
