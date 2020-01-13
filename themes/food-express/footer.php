@@ -96,7 +96,7 @@
 
 					<?php if(! $hidePoweredBy ){ ?>
 						<div class="six columns text-right">
-							<p><?php echo __('Proudly powered by Myo Min Htwe', 'food-express');?> <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php echo __('WordPress', 'food-express'); ?></a>
+							<p><?php echo __('Proudly powered by CMS-Team 12', 'food-express');?> <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php echo __('WordPress', 'food-express'); ?></a>
 						</div>
 					<?php } ?>
 
