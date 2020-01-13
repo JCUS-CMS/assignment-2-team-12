@@ -3,3 +3,5 @@ This is test commit done by Myo Min Htwe.
 Our team is now figuring out how to deploy our site automatically from github to live server. 
 
 Currently, we are facing a lot of challenges and difficulties. 
+
+Deploying wordpress files to live server automatically is not easy.
