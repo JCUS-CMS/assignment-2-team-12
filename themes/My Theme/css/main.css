@@ -7,3 +7,11 @@ header{
 .page-wrap{
 	padding: 2em 0;
 }
+
+header .top-bar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+

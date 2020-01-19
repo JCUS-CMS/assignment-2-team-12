@@ -14,13 +14,18 @@
 <body>
 	
 <header>
+
+
+<div class="container">
 	<?php
 	wp_nav_menu(
 		array(
-			'top-menu' => 'Top Menu Location',
-		'mobile-menu' => 'Mobile Menu Location',
+			'theme-location' => 'top menu',
+			// 'menu' => 'Top Bar'
+			'menu_class' => 'top-bar'
 		)
 	);
 	?>
+</div>
 	
 </header>
