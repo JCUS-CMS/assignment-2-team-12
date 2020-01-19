@@ -1,0 +1,31 @@
+2020-01-19 09:14:14#13 - WPSiteSyncContent::activate():121 network=false
+2020-01-19 09:14:14#13 - SyncActivate::plugin_activation(false):37
+2020-01-19 09:14:14#13 - SyncActivate::plugin_activation():38 multisite=FALSE
+2020-01-19 09:14:14#13 - SyncActivate::plugin_activation():61 single site activation
+2020-01-19 09:14:14#13 - SyncActivate::create_database_tables():275
+2020-01-19 09:14:14#13 - SyncActivate::create_database_tables():316 sql=ALTER TABLE `wp_spectrom_sync_log`
+				ADD COLUMN `type` VARCHAR(4) NOT NULL DEFAULT 'recv' AFTER `target_user`
+2020-01-19 09:14:14#13 - SyncActivate::create_database_tables():320 - done
+2020-01-19 09:14:14#97 - WPSiteSyncContent::activate():121 network=false
+2020-01-19 09:14:14#97 - SyncActivate::plugin_activation(false):37
+2020-01-19 09:14:14#97 - SyncActivate::plugin_activation():38 multisite=FALSE
+2020-01-19 09:14:14#97 - SyncActivate::plugin_activation():61 single site activation
+2020-01-19 09:14:14#97 - SyncActivate::create_database_tables():275
+2020-01-19 09:14:14#97 - SyncActivate::create_database_tables():316 sql=ALTER TABLE `wp_spectrom_sync_log`
+				ADD COLUMN `type` VARCHAR(4) NOT NULL DEFAULT 'recv' AFTER `target_user`
+2020-01-19 09:14:14#97 - SyncActivate::create_database_tables():320 - done
+2020-01-19 09:14:28#25 - SyncSettings::validate_settings():671 change username: user="admin" pass="password"
+2020-01-19 09:14:28#25 - SyncApiRequest::api() action="auth"
+2020-01-19 09:14:28#25 - SyncApiResponse::error_code():151 setting error code: 4
+2020-01-19 09:16:12#16 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-wo4YRC.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:12#58 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-JnWzGi.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:13#46 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-dTlGBS.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:13#42 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-GDhHlC.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:13#73 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-iN2rg1.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:13#10 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-pnGThA.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:14#60 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-zqM6wk.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:14#34 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-87GeAb.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:15#17 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-uvFF6j.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:15#18 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-wMrEtJ.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:15#91 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-Smsewl.tmp ext=.tmp dir=/tmp/
+2020-01-19 09:16:16#93 - WPSiteSyncContent::filter_unique_filename() filename=chunk.txt-gb1YpO.tmp ext=.tmp dir=/tmp/
