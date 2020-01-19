@@ -6,11 +6,8 @@ Template Name: Contact Us
 
 <?php get_header();?>
 
-<<<<<<< HEAD
 <section class="page-wrap">
-=======
-<section class="page-wrap">  
->>>>>>> navibar
+  
 <div class="container">
 
         <h1><?php the_title();?></h1>
