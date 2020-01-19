@@ -1,5 +1,6 @@
 <?php
 
+#Load Stylessheet
 function load_css()
 {
 
@@ -7,11 +8,20 @@ function load_css()
 			array(), false, 'all' );
 		wp_enqueue_style('bootstrap');
 
+		wp_register_style('main', get_template_directory_uri() . '/css/main.css', 
+			array(), false, 'all' );
+		wp_enqueue_style('main');
+
 
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
+<<<<<<< HEAD
 //function load javascript
+=======
+
+#Load Javascript
+>>>>>>> 81bf422798aaf063739b92b1f32ecd98e5eeb9a1
 function load_js()
 {
 	wp_enqueue_script('jquery');
@@ -126,6 +136,7 @@ function airi_setup() {
 		 */
 		load_theme_textdomain( 'airi', get_template_directory() . '/languages' );
 
+<<<<<<< HEAD
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -238,3 +249,17 @@ function airi_widgets_init() {
 	register_widget( 'Airi_Recent_Posts' );
 
 }
+=======
+#Theme Options
+add_theme_support('menus');
+
+#Menus
+register_nav_menus(
+
+	array(
+		'top-menu' => 'Top Menu Location',
+		'mobile-menu' => 'Mobile Menu Location',
+	)
+
+);
+>>>>>>> 81bf422798aaf063739b92b1f32ecd98e5eeb9a1

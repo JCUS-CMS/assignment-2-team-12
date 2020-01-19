@@ -1,0 +1,30 @@
+header{
+	background: #111;
+	width: 100%;
+	height: 100px;
+}
+
+.page-wrap{
+	padding: 2em 0;
+}
+
+header .top-bar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header .top-bar li a{
+	padding: 25em 1em;
+	color: #fff;
+
+}
+
+header .top-bar li:first-child a{
+	padding-left: 0;
+}
+
+header .top-bar li:last-child a{
+	padding-right: 0;
+}
