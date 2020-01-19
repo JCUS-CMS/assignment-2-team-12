@@ -8,35 +8,29 @@ header{
 	padding: 2rem 0;
 }
 
-header .top-bar ul{
+header .top-bar {
 	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  	position: fixed;
-  	top: 0;
-  	width: 100%;}
-
-header .top-bar li a:hover:not(.active) {
-	
-	color: red;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
-header .top-bar li a{
-	display: block;
-  	color: white;
- 	text-align: center;
-  	padding: 14px 16px;
-  	text-decoration: none;
-  	float: right;
+header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+header .top-bar li a {
+	padding: .25rem 1rem;
+	color: #fff;
+}
 
-/*testing if it works or not */
+header .top-bar li:first-child a {
+	padding-left: 0;
 
+}
 
-
-
-.active {
-  background-color: #4CAF50;
+header .top-bar li:last-child a {
+	padding-right: 0;
 }
