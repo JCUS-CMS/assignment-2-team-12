@@ -1,0 +1,42 @@
+header{
+	background:  #4CAF50;
+	width: 100%;
+	height: 100px;
+}
+
+.page-wrap{
+	padding: 2rem 0;
+}
+
+header .top-bar ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;}
+
+header .top-bar li a:hover:not(.active) {
+	
+	color: red;
+}
+
+header .top-bar li a{
+	display: block;
+  	color: white;
+ 	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	float: left;
+}
+
+
+/*testing if it works or not */
+
+
+
+
+.active {
+  background-color: #4CAF50;
+}
