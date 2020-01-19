@@ -37,12 +37,6 @@ header .container ul{
 	height: 100%;
 }
 
-header .top-bar li a {
-	padding: .25rem 1rem;
-	color: #fff;
-
-}
-
 header .top-bar li {
 	position: relative;
 }
