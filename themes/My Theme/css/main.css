@@ -17,9 +17,14 @@ header .top-bar{
 
 header .top-bar li a{
 	padding: 25em 1em;
+	color: #fff;
 
 }
 
 header .top-bar li:first-child a{
 	padding-left: 0;
+}
+
+header .top-bar li:last-child a{
+	padding-right: 0;
 }
