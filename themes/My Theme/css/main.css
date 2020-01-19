@@ -19,3 +19,7 @@ header .top-bar li a{
 	padding: 25em 1em;
 
 }
+
+header .top-bar li:first-child a{
+	padding-left: 0;
+}
