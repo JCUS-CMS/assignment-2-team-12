@@ -15,3 +15,7 @@ header .top-bar{
 	display: flex;
 }
 
+header .top-bar li a{
+	padding: 25em 1em;
+
+}
