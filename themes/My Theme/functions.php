@@ -29,17 +29,17 @@ function load_js()
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
-<<<<<<< HEAD
+
 #Theme Options
 add_theme_support('menus');
 
 /* Testing git for function by Edy */
 
-=======
+
 
 #Theme Options
 add_theme_support('menus');
->>>>>>> menu
+
 
 #Menus
 register_nav_menus(
