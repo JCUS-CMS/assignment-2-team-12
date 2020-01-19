@@ -9,7 +9,8 @@
 	<?php wp_head();?>
 
 
-	
+
 </head>
 <body>
-	
+
+THIS IS THE SECOND HEADER
