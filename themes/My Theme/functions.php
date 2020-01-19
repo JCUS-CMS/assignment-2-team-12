@@ -29,8 +29,13 @@ function load_js()
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
+<<<<<<< HEAD
 #Theme Options
 add_theme_support('menus');
 
 #Menus helllo testing again
+=======
+/* Testing git for function by Edy */
+
+>>>>>>> 944b53d83bcc6412154c4965192ba22bbce9220b
 
