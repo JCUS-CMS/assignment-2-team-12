@@ -57,12 +57,9 @@ header .top-bar li a:hover:not(.active) {
   background-color: #111;
   border-radius: .5rem;
 }
-<<<<<<< HEAD
-/**testing**/
-=======
+
 
 header.top-bar .sub-menu li .sub-menu {
     left: 100%;
 }
-/**testing bla bla bla**/
->>>>>>> navibar
+

@@ -35,7 +35,10 @@
 
 
     <?php the_content();?>
-    
+
+
+    /** hello **/
+
     
     
 <?php endwhile; else: endif;?>  
