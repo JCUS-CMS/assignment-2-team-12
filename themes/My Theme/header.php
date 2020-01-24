@@ -19,19 +19,21 @@
 
 
 	<div class="container">
+		<div class = "navibarr">
+			
+		
+
+			<?php 
+			wp_nav_menu(
+					array(
+
+						'theme_location' => 'top-menu',
+						//'menu' => 'Top Bar'
+						'menu_class' => 'top-bar'	
+					)
+				);
+			?>
+		</div>
 
 		
-		<?php 
-		wp_nav_menu(
-				array(
-
-					'theme_location' => 'top-menu',
-					//'menu' => 'Top Bar'
-					'menu_class' => 'top-bar'	
-				)
-		);
-		?>
-	</div>
-
 </header>
-	
