@@ -2,7 +2,6 @@
 
     <p> <?php echo get_the_date('d/m/Y h:i:s'); ?> </p>
 
-    <?php the_content(); ?>
 
     <?php 
         //the_author();
@@ -28,11 +27,13 @@
     $categories = get_the_category();
     foreach ($categories as $cat) : ?>
         
-            <a href="<?php echo get_category_link($cat->term_id); ?>">
+            <a href="<?php echo get_category_link($cat->term_id); ?>" class="badge badge-pill badge-primary font-weight-bold" >
                 <?php echo $cat->name; ?>
             </a>
 
     <?php endforeach; ?>
+
+    <?php the_content(); ?>
 
 
 

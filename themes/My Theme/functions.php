@@ -39,11 +39,9 @@ add_action('wp_enqueue_scripts', 'load_js');
 
 #Theme Options
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
-/* Testing git for function by Edy */
 
-//Theme options
-add_theme_support('menus');
 
 
 //Menus
@@ -60,18 +58,6 @@ register_nav_menus(
 
 
 
-
-#Theme Options
-add_theme_support('menus');
-
-
-#Menus
-register_nav_menus(
-
-	array(
-		'top-menu' => 'Top Menu Location',
-		'mobile-menu' => 'Mobile Menu Location',
-		'footer-menu' => 'Footer Menu Location',
-	)
-
-);
+// custom image-sizes
+add_image_size('blog-large', 800, 400, true);
+add_image_size('blog-small', 250, 250, true);

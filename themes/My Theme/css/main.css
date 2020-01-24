@@ -59,7 +59,5 @@ header .top-bar li a:hover:not(.active) {
 }
 
 
-header.top-bar .sub-menu li .sub-menu {
-    left: 100%;
-}
+
 
