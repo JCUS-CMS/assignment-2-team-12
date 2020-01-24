@@ -4,6 +4,63 @@ header{
 	height: 100px;
 }
 
+.row {
+	padding-top: 20px;
+
+}
+
+.widget {
+	
+
+	margin-bottom: 45px;
+	position: relative;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	display: inline-block;
+	max-width: 100%;
+
+}
+
+.menu {
+	
+	position: relative;
+	display: block;
+  	color: white;
+ 	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	color: #00000;
+  	table-layout: all;
+}
+
+{
+	color: black;
+	text-align: center;
+	
+}
+.widget_recent_entries{
+	display: block;
+  	color: white;
+  	text-decoration: none;
+  	display: inline-block;
+  	
+
+}
+
+.widget_recent_entries .widget-title{
+	text-align: center;
+	color: black;
+	padding-right: 50px;
+}
+
+.searchbutton{
+	padding-top: 20px;
+	float:center;
+
+
+}
+
 .page-wrap{
 	padding: 2rem 0;
 }
@@ -60,4 +117,28 @@ header .top-bar li a:hover:not(.active) {
 
 
 
+.section-inner{
+	display: inline-flex;
+	text-decoration: none;
+}
 
+
+.footer-group{
+	display: flex;
+	background-color:#cc0000;
+	color:white;
+	font-size: 120%;  
+}
+
+
+.footer-group .to-the-top-long{
+	color: white;
+	float: right;
+}
+
+.footer-credits{
+
+}
+.topp{
+	justify-content: right;
+}
