@@ -142,3 +142,15 @@ header .top-bar li a:hover:not(.active) {
 .topp{
 	justify-content: right;
 }
+
+.comment-respond{
+	position: relative;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	display: inline-block;
+	width: 100%;
+	border-style: solid;
+	padding: 40px;
+
+}
