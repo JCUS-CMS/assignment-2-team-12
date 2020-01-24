@@ -1,21 +1,37 @@
-<?php get_header();?>
+<?php get_header(); ?>
+
+<div class="container"> 
 
 
-<section class="page-wrap">  
+    <section class="row">
 
-<div class="container">
 
-		<?php if(has_post_thumbnail()):?>
+    <div class="col-lg-9">
+        <h1><?php the_title(); ?></h1>
 
-			<img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>" classes = "img-fluid mb -3 img-thumbnail">
+        <?php if(has_post_thumbnail()): ?>
+            <img src="<?php the_post_thumbnail_url('blog-large'); ?>" class="img-fluid mb-4 img-thumbnail" alt="<?php the_title(); ?>">
+        <?php endif; ?>
 
-		<?php endif;?>
+        <?php get_template_part('includes/section', 'content'); ?>
+    </div>
+    
+    <div class="col-lg-3" >
+    	<div class=card>
+    		<div class = "card-body">
+        		<?php if( is_active_sidebar('page-sidebar') ) : ?>
+            		<?php dynamic_sidebar('page-sidebar'); ?>
+        		<?php endif; ?>
+        	</div>	
+    	</div>
+    </div>
 
-        <h1><?php the_title();?></h1>
 
-        <?php get_template_part('includes/section','content');?>
+    </section>
 
 </div>
-</section>
 
-<?php get_footer();?>  
+
+
+
+<?php get_footer(); ?>
