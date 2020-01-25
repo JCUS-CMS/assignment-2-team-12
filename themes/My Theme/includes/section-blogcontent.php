@@ -5,7 +5,7 @@
     <p> <?php echo get_the_date('d/m/Y h:i:s'); ?> </p>
 
 
-    <?php 
+    <?php
         //the_author();
         $fname = get_the_author_meta('first_name');
         $lname = get_the_author_meta('last_name');
@@ -14,22 +14,22 @@
 
     <p> Posted by <strong> <?php echo $fname;?> <?php echo $lname;?> </strong> </p>
 
-    <?php 
+    <?php
     $tags = get_the_tags();
     if($tags) :
     foreach ($tags as $tag) : ?>
-        <a href="<?php echo get_tag_link($tag->term_id); ?>" class="badge badge-success">
+        <a href="<?php echo get_tag_link($tag->term_id); ?>" class="btn btn-info "">
             <?php echo $tag->name; ?>
         </a>
     <?php endforeach; endif; ?>
 
 
 
-    <?php 
+    <?php
     $categories = get_the_category();
     foreach ($categories as $cat) : ?>
-        
-            <a href="<?php echo get_category_link($cat->term_id); ?>" class="badge badge-pill badge-primary font-weight-bold" >
+
+            <a href="<?php echo get_category_link($cat->term_id); ?>" class="btn btn-success font-weight-bold" >
                 <?php echo $cat->name; ?>
             </a>
 
@@ -38,7 +38,7 @@
     <?php the_content(); ?>
 
      <?php comment_form(array('comment_notes_after' => '')); ?>
-     
+
 </div>
 
     <div class="col-lg-3" >
@@ -47,13 +47,13 @@
                     <?php if( is_active_sidebar('blog-sidebar') ) : ?>
                         <?php dynamic_sidebar('blog-sidebar'); ?>
                     <?php endif; ?>
-                </div>  
+                </div>
             </div>
         </div>
 </section>
 
 
 
-    
-    
+
+
 <?php endwhile; endif; ?>
