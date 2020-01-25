@@ -18,6 +18,6 @@
     
 <?php endwhile; else:  ?>
 
-    There's no results for "<?php echo get_search_query(); ?>" 🤷🏻‍♂️
+   <h1> There's no results for "<?php echo get_search_query(); ?>" 🤷🏻‍♂️ </h1>
 
 <?php endif; ?>

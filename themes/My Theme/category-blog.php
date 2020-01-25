@@ -19,15 +19,7 @@
         </div>
       
         	
-        <div class="col-lg-3" >
-    		<div class=card>
-    			<div class = "card-body">
-        			<?php if( is_active_sidebar('page-sidebar') ) : ?>
-            			<?php dynamic_sidebar('page-sidebar'); ?>
-        			<?php endif; ?>
-        		</div>	
-    		</div>
-    	</div>
+
 
     </section>
 </div>

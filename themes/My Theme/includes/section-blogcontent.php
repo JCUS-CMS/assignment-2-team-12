@@ -18,7 +18,7 @@
     $tags = get_the_tags();
     if($tags) :
     foreach ($tags as $tag) : ?>
-        <a href="<?php echo get_tag_link($tag->term_id); ?>" class="btn btn-info "">
+        <a href="<?php echo get_tag_link($tag->term_id); ?>" class="btn btn-info ">
             <?php echo $tag->name; ?>
         </a>
     <?php endforeach; endif; ?>

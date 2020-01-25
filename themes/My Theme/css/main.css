@@ -7,7 +7,7 @@ header{
 
 .row {
 	padding-top: 20px;
-	padding-right:inherit;
+	
 	
 	
 	
@@ -23,7 +23,22 @@ header{
 	
 
 }
+.cardl {
+	float: right;
+	background-color: white;
+	padding: 20px;
+	border-radius: 18px;
+	
+	
 
+}
+
+.card-bodyl{
+	
+	background-color: #85ceff;
+	border-radius: 18px;
+
+}
 .card-body{
 	
 	background-color: #85ceff;
