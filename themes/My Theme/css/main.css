@@ -206,6 +206,12 @@ header .top-bar li a:hover:not(.active) {
   border-radius: .5rem;
 }
 
+header .top-bar ul a.active  {
+	background-color: #000000;
+	border-radius: .5rem;
+	color: red;
+  }
+
 .headercolorchanging {
 	color: white;
 }
@@ -257,4 +263,32 @@ header .top-bar li a:hover:not(.active) {
 	color: inherit;
 	color: white;
 width: 100%;
+}
+.site-title {
+	font-weight: bold;
+	color: white;
+	justify-content: center;
+	padding-left: 5%;
+	
+
+} 
+
+.site-tagline {
+	font-style: italic;
+	padding-left: 60%;
+	color: white;
+}
+
+.bigbox {
+	background-color: white;
+	
+	border-radius: 18px;
+	border-style:solid ;
+}
+
+.smallbox {
+	background-color: #85ceff;
+	border-radius: 18px;
+	padding: 5px;
+		
 }

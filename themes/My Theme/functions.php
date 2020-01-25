@@ -115,3 +115,5 @@ function themename_custom_logo_setup() {
 }
 
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+
