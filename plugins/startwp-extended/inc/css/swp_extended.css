@@ -1,0 +1,36 @@
+.swp-archive-title{}
+.swp-archive-rating{}
+.swp-archive-price{}
+
+.swp-archive-description{}
+.swp-archive-category{}
+.swp-archive-cart{}
+
+
+.swp-archive-image{position: relative;}
+.swp-archive-image img{margin:0 !important;}
+.swp-archive-title .product_title{margin: 0 !important;}
+
+.swp-archive-title, 
+.swp-archive-rating, 
+.swp-archive-price, 
+.swp-archive-image, 
+.swp-archive-description, 
+.swp-archive-category, 
+.swp-archive-cart{
+	display: block; 
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.swp-single-title{}
+.swp-single-rating{}
+.swp-single-price{}
+.swp-single-meta{}
+.swp-single-description{}
+.swp-single-cart{}
