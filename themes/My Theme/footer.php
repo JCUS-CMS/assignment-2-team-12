@@ -14,16 +14,16 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"style="text-decoration: none; color: inherit;"><?php echo bloginfo( 'name' ); ?></a>
 						</p>
 
-						<p class="powered-by-wordpress">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/' ) ); ?>"style="text-decoration: none; color: inherit;">
-								<?php _e( 'Powered by WordPress' ); ?>
+						<p class="Developed-by-">
+							<a href="<?php echo esc_url( __( 'https://github.com/JCUS-CMS/assignment-2-team-12/' ) ); ?>"style="text-decoration: none; color: inherit;">
+								<?php _e( 'Developed By CMS_Team 12' ); ?>
 							</a>
 						</p>
 
 					</div>
 				<div class ="topp">
 					<a class="to-the-top" href="#top">
-						<span class="to-the-top-long , btn btn success" style="text-decoration: none; color: inherit;">
+						<span class="to-the-top-long" style="text-decoration: none; color: inherit;">
 							<?php
 							
 							printf( __( 'To the top %s' ), '<span class="arrow" >

@@ -7,8 +7,10 @@ header{
 
 .row {
 	padding-top: 20px;
-	padding-right: -120px;
-	margin-right:-100px;
+	padding-right:inherit;
+	
+	
+	
 
 
 }
@@ -17,7 +19,8 @@ header{
 	background-color: white;
 	padding: 20px;
 	border-radius: 18px;
-	padding-left: 20px;
+	margin-right: -30%;
+	
 
 }
 
@@ -28,6 +31,12 @@ header{
 
 }
 
+.col-lg-3 {
+	width: 100%;
+	
+
+
+}
 .widget-title{
 	color:white;
 }
@@ -201,12 +210,16 @@ header .top-bar li a:hover:not(.active) {
 	color: white;
 }
 
-.section-inner{
+
+
+ /** For footer **/
+.footer-group .section-inner{
 	display: inline-flex;
 	text-decoration: none;
+	width: 100%;
+	
 }
  
- /** For footer **/
 
 .footer-group{
 	display: flex;
@@ -220,15 +233,22 @@ header .top-bar li a:hover:not(.active) {
 .footer-group .to-the-top-long{
 	color: white;
 	float: right;
+	
 }
 
-.footer-credits{
+.footer-group .footer-credits{
+	color: white;
+	float: right;
+	width:100%;
+	
+
 
 }
 .to-the-top-long{
 	justify-content: right;
 	text-decoration: none;
 	color: white;
+	float: right;
 }
 
 .footer-group .topp {
@@ -236,4 +256,5 @@ header .top-bar li a:hover:not(.active) {
 	text-decoration-style: none;
 	color: inherit;
 	color: white;
+width: 100%;
 }
