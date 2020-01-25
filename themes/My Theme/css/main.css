@@ -1,5 +1,5 @@
 header{
-	background-color:#9ff578;
+	background-color:#a8a8ff;
 	width: 100%;
 	height: 100px;
 	
@@ -7,13 +7,8 @@ header{
 
 .row {
 	padding-top: 20px;
-	
-	
-	
-	
-
-
 }
+
 .card {
 	float: right;
 	background-color: white;
@@ -244,7 +239,7 @@ header .top-bar ul a.active  {
 
 .footer-group{
 	display: flex;
-	background-color:#9ff578;
+	background-color:#a8a8ff;
 	color:white;
 	font-size: 120%;
 	clear: both;
