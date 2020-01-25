@@ -17,23 +17,27 @@
 <header>
 
 
-
 	<div class="container">
-		<div class = "navibarr">
-			
+		<?php if( has_custom_logo() ) { 
+  the_custom_logo(); 
+	} else { ?>
+	<h1 class="navbar-brand mb-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+<?php } ?>
 		
+		<?php 
+		wp_nav_menu(
+				array(
 
-			<?php 
-			wp_nav_menu(
-					array(
+					'theme_location' => 'top-menu',
+					//'menu' => 'Top Bar'
+					'menu_class' => 'top-bar'	
+				)
+		);
+		?>
 
-						'theme_location' => 'top-menu',
-						//'menu' => 'Top Bar'
-						'menu_class' => 'top-bar'	
-					)
-				);
-			?>
-		</div>
 
-		
+
+	</div>
+
 </header>
+	

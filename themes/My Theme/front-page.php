@@ -2,13 +2,37 @@
 
 <section class="page-wrap">
 
-<div class="container">
+	<div class="container">
 
-        <h1><?php the_title();?></h1>
+		<section class="row">
 
-        <?php get_template_part('includes/section','content');?>
+		<div class="col-lg-9" >
+			<?php get_template_part('includes/section','content');?>
 
-</div>
+			</div>
+
+
+		<div class="col-lg-3" >
+
+	    		<div class=card>
+
+	    			<div class = "card-body">
+
+	        			<?php if( is_active_sidebar('page-sidebar')):?>
+
+	            			<?php dynamic_sidebar('page-sidebar'); ?>
+
+	        			<?php endif; ?>
+
+	        		</div>	
+
+	    		</div>
+	    	</div>
+
+	    </section>
+	    		        
+
+	</div>
 </section>
 
 <?php get_footer();?>  

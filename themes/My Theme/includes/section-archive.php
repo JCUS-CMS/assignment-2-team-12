@@ -14,15 +14,18 @@
 
 		<?php endif;?>
 
-			<div class = 'blog-content ml-4'>
+			<div class = headercolorchanging>
 
-			 	<h3><?php the_title();?></h3>
+				<div class = 'blog-content ml-4'>
 
-	 			<?php the_excerpt();?>
+				 	<h3><?php the_title();?></h3>
 
-	 			<a href="<?php the_permalink();?>" class="btn btn-success">Read More</a>
+		 			<?php the_excerpt();?>
 
-	 		</div>
+		 			<a href="<?php the_permalink();?>" class="btn btn-success">Read More</a>
+
+		 		</div>
+		 	</div>
 
 	 	</div>
 

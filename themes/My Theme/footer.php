@@ -23,10 +23,11 @@
 					</div>
 				<div class ="topp">
 					<a class="to-the-top" href="#top">
-						<span class="to-the-top-long">
+						<span class="to-the-top-long , btn btn success" style="text-decoration: none; color: inherit;">
 							<?php
 							
-							printf( __( 'To the top %s' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+							printf( __( 'To the top %s' ), '<span class="arrow" >
+							<?phparia-hidden="true">&uarr;</span>' );
 							?>
 						</span>
 						

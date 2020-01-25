@@ -1,5 +1,7 @@
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+<section class = "row">
 
+    <div class="col-lg-9">
     <p> <?php echo get_the_date('d/m/Y h:i:s'); ?> </p>
 
 
@@ -35,7 +37,22 @@
 
     <?php the_content(); ?>
 
-    <?php comment_form(array('comment_notes_after' => '')); ?>
+     <?php comment_form(array('comment_notes_after' => '')); ?>
+     
+</div>
+
+    <div class="col-lg-3" >
+            <div class=card>
+                <div class = "card-body">
+                    <?php if( is_active_sidebar('blog-sidebar') ) : ?>
+                        <?php dynamic_sidebar('blog-sidebar'); ?>
+                    <?php endif; ?>
+                </div>  
+            </div>
+        </div>
+</section>
+
+
 
     
     
