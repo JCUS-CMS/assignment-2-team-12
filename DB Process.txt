@@ -3,3 +3,7 @@ DB Process Tracking
 Future plans page developed by Sai Aung Sein Lin
 Time: 6:30
 Date: 25 Jan 2020
+
+About Us page developed by Ahnt Moe Heinn
+Time: 6:42
+Date: 25 Jan 2020
