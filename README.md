@@ -191,8 +191,13 @@ _**staging** = your <branch> that you want to push to_
   
 now check out the staging URL for changes:<br/>
 
-http://staging.cms-a2.ayushmank.sgedu.site/group-007/<br/>
+https://myominh.sgedu.site/stagetest/
 
 ------------------------------------
 
 <br/>
+
+This is our Production Site.
+
+
+https://myominh.sgedu.site/doctorsconnect/
