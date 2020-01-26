@@ -8,13 +8,23 @@
 2. Sai Aung Sein Lin - saiaungseinlin@my.jcu.edu.au
 3. Myo Min Htwe - myomin.htwe@my.jcu.edu.au
 4. Ahnt Moe Hein - ahntmoeheinn@my.jcu.edu.au
-
 ------------------------------------
+
+**Why VVV?**
+
+*VVV allows us to edit our files as much as we want like easily renaming the files and son. Aside from that VVV base its Database cms.wordpress.local while other installations like Wp Distillery have it on ScotchBox. VVV gives us an easier access to migrate our database as wordpress is the one hosting it.*
+<br> 
+**Why WP_Sync_DB?**
+
+*This plugin allows the user to migrate its whole database to a remote DB. It actually overwite the whole DB so, the user will have to careful in their transfer of DB. The advantage of this plugin is that it is easy to access and it is just one click awasy from uploading our local database to remote Db. Not only that we can also Export and pull the database. But in this project , we will just be using the push and pull function for our transfer of DB.**
+
+<br/><br/>
 ## Local Environment Setup -
 <br/><br/>
 **Setting up VVV in your local machine**
 <br/>
-*run the following commands:*
+<br>
+**To start the process, run the following commands:**
 
 ```
 git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git
@@ -51,16 +61,7 @@ and add the following to your file
     hosts:
       - cms.wordpress.local
  ```
- 
-<br/>
 
-If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test<br/>
-and then run this command from VVV/ directory:<br/>
-```
-vagrant reload --provision
-```
-
-<br/>
 
 **Setting up GITHUB in your new website/public_html**
 
@@ -68,49 +69,36 @@ vagrant reload --provision
 
 Assuming you are already in your VVV directory<br/>
 ```
-cd www/wordpress-cms/
+cd www/wordpress-cms/public_html/
 ```
 
-now we make a copy of your public_html/wp-config.php<br/>
+now delete the wp-content file.
 ```
-cp public_html/wp-config.php wp-config.php
-```
-
-then we delete the public_html and create a new directory with same name<br/>
-```
-rm -rf public_html && mkdir public_html
+rm -rf wp-content
 ```
 
-then cd inside public_html<br/>
-```
-cd public_html
-```
-
-Setup git in your directory<br/>
+then set up git in the directory
 ```
 git init
 ```
 
-Create a new branch for easier push and pull<br/>
-```
-git checkout -b development
-```
 
 Link your local git with the remote<br/>
 ```
 git remote add origin https://github.com/JCUS-CMS/assignment-2-team-12
 ```
 
-
-
+now rename assignment-2-team-12 file name to wp-content<br/>
+```
+(go to the directory and rename the file)
+```
+now cd to the wp-content folder <br/>
+```
+cd wp-content
+```
 now pull from the remote branch<br/>
 ```
 git pull
-```
-
-now copy the wp-config.php file back to your public_html<br/>
-```
-cp ../wp-config.php wp-config.php
 ```
 
 
@@ -119,19 +107,19 @@ cp ../wp-config.php wp-config.php
 
 <br/>
 
-create a new branch and link it with your git remote staging <branch>:<br/>
+create a new branch and link it with your git remote header <branch>:<br/>
   
 ```
-git checkout -b staging
+git checkout staging
 ```
 
 now for easy pull and push upstream it to your origin/<branch>=staging.<br/>
   
 ```
-git branch --set-upstream-to=origin/staging staging
+git branch --set-upstream-to=origin/header staging
 ```
 
-now pull the latest staging branch commits:<br/>
+now pull the latest upadtesf branch commits:<br/>
 
 ```
 git pull
@@ -157,14 +145,15 @@ git checkout master
 
 <br/>
 
-**EXAMPLE - FOR STAGING**
+Example of the staging process
 
 <br/>
 
-_For example lets say you have added some new feature to your development branch and now want to update it to staging branch
+For example lets say you have added some new source codes on your footer branch and now want to update it.
 Then follow the following command:<br/>
-You have to run the following command from your development branch -_<br/>
 <br/>
+*Check first on which you are on. Make sure that you are on the correct branch*
+<br>
 Add the changed files to your git:
 
 ```
@@ -177,27 +166,25 @@ now commit the changes you have made:<br/>
 git commit -m "<your-commit-message>"
 ```
 
-now push the changes from development to staging :<br/>
+now push the changes :<br/>
 
 ```
-git push origin staging
+git push
 ```
 
-_**origin** = your remote git repo_
-<br/>
-_**staging** = your <branch> that you want to push to_
 
 <br/>
   
-now check out the staging URL for changes:<br/>
+Check out the staging URL!<br/>
 
 https://myominh.sgedu.site/stagetest/
 
-------------------------------------
-
 <br/>
 
-This is our Production Site.
+After going for many tests and runs, we were finally able to push it for Production .This is our Production Site!
 
 
 https://myominh.sgedu.site/doctorsconnect/
+
+
+------------------------------------
