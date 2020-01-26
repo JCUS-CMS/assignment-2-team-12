@@ -7,7 +7,7 @@
 1. Aung Zay Ya - aungzayya1@my.jcu.edu.au
 2. Sai Aung Sein Lin - saiaungseinlin@my.jcu.edu.au
 3. Myo Min Htwe - myomin.htwe@my.jcu.edu.au
-4. Ahnt Moe Hein - 
+4. Ahnt Moe Hein - ahntmoeheinn@my.jcu.edu.au
 
 ------------------------------------
 ## Local Environment Setup -
