@@ -14,6 +14,7 @@
 
 *VVV allows us to edit our files as much as we want like easily renaming the files and son. Aside from that VVV base its Database cms.wordpress.local while other installations like Wp Distillery have it on ScotchBox. VVV gives us an easier access to migrate our database as wordpress is the one hosting it.*
 <br> 
+
 **Why WP_Sync_DB?**
 
 *This plugin allows the user to migrate its whole database to a remote DB. It actually overwite the whole DB so, the user will have to careful in their transfer of DB. The advantage of this plugin is that it is easy to access and it is just one click awasy from uploading our local database to remote Db. Not only that we can also Export and pull the database. But in this project , we will just be using the push and pull function for our transfer of DB.**
