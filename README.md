@@ -1,4 +1,4 @@
-# CMS: Assignmnet 2
+# CMS: Assignment 2
 ## Team 12
 
 ------------------------------------
